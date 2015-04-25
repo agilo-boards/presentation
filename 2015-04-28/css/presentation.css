@@ -1,0 +1,57 @@
+html.bg-dornier body {
+    background: url("../images/presentation/lake_large.jpg");
+}
+span.zuehlke-header:before {
+    content: "Agilo Boards - ";
+    font-weight: normal;
+    color: #dddddd;
+}
+
+html.zuehlke-bg-parallax body {
+    background-image: url("../images/presentation/sidney_night.jpg");
+}
+
+/* Style for print parallax */
+body.print-pdf section.zuehlke-bg-parallax{
+    /*Make sure paralax background is visible when print mode is active*/
+    background: url("../../images/presentation/sidney_night.jpg");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+
+html.agiloboards-bg-parallax body {
+    background-image: url("../images/presentation/scrum-board.png");
+}
+div.zuehlke-splash-title.orange {
+    color: white;
+    background-color: #FE6100;
+    padding: 20px;
+    margin: 150px;
+}
+
+/* Style for print parallax */
+body.print-pdf section.agiloboards-bg-parallax{
+    /*Make sure paralax background is visible when print mode is active*/
+    background: url("../../images/presentation/scrum-board.png");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+
+div.tools {
+    width: 1200px;
+}
+
+div.tool {
+    margin: 30px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    height: 250px;
+    width: 200px;
+}
+
+div.tool img {
+    margin: 0px -40px;
+    width: 150px;
+    height: 150px;
+}
