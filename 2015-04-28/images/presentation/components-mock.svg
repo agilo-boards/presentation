@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Generiert durch Microsoft Visio 11.0, SVG Export, v1.0 components-mock.svg Page-1 -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="2.71198in" height="4.36553in"
+		viewBox="0 0 195.263 314.318" xml:space="preserve" color-interpolation-filters="sRGB" class="st13">
+	<v:documentProperties v:langID="1031" v:metric="true" v:viewMarkup="false">
+		<v:userDefs>
+			<v:ud v:nameU="msvSubprocessMaster" v:prompt="" v:val="VT4(Rectangle)"/>
+			<v:ud v:nameU="msvNoAutoConnect" v:val="VT0(1):26"/>
+		</v:userDefs>
+	</v:documentProperties>
+
+	<style type="text/css">
+	<![CDATA[
+		.st1 {visibility:visible}
+		.st2 {fill:#cdcdcd;fill-opacity:0.5;stroke:#cdcdcd;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.5;stroke-width:0.25}
+		.st3 {fill:url(#grad30-6);stroke:#404040;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.25}
+		.st4 {fill:#000000;font-family:Calibri;font-size:1.16666em}
+		.st5 {fill:url(#grad30-13);stroke:#404040;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.25}
+		.st6 {font-size:0.714294em}
+		.st7 {fill:url(#grad30-21);stroke:#404040;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.25}
+		.st8 {fill:#000000;font-family:Calibri;font-size:1.00001em}
+		.st9 {font-size:1em}
+		.st10 {fill:url(#grad30-29);stroke:#404040;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.25}
+		.st11 {marker-end:url(#mrkr5-38);stroke:#404040;stroke-linecap:round;stroke-linejoin:round;stroke-width:3}
+		.st12 {fill:#404040;fill-opacity:1;stroke:#404040;stroke-opacity:1;stroke-width:0.54347826086957}
+		.st13 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<defs id="Patterns_And_Gradients">
+		<linearGradient id="grad30-6" v:fillPattern="30" v:foreground="#f0f0f0" v:background="#ffffff" x1="0" y1="1" x2="0" y2="0">
+			<stop offset="0" style="stop-color:#f0f0f0;stop-opacity:1"/>
+			<stop offset="1" style="stop-color:#ffffff;stop-opacity:1"/>
+		</linearGradient>
+		<linearGradient id="grad30-13" v:fillPattern="30" v:foreground="#f7dbc1" v:background="#faeadc" x1="0" y1="1" x2="0" y2="0">
+			<stop offset="0" style="stop-color:#f7dbc1;stop-opacity:1"/>
+			<stop offset="1" style="stop-color:#faeadc;stop-opacity:1"/>
+		</linearGradient>
+		<linearGradient id="grad30-21" v:fillPattern="30" v:foreground="#ffffae" v:background="#ffffcc" x1="0" y1="1" x2="0" y2="0">
+			<stop offset="0" style="stop-color:#ffffae;stop-opacity:1"/>
+			<stop offset="1" style="stop-color:#ffffcc;stop-opacity:1"/>
+		</linearGradient>
+		<linearGradient id="grad30-29" v:fillPattern="30" v:foreground="#c6ecd1" v:background="#dcf3e3" x1="0" y1="1" x2="0" y2="0">
+			<stop offset="0" style="stop-color:#c6ecd1;stop-opacity:1"/>
+			<stop offset="1" style="stop-color:#dcf3e3;stop-opacity:1"/>
+		</linearGradient>
+	</defs>
+	<defs id="Markers">
+		<g id="lend5">
+			<path d="M 2 1 L 0 0 L 1.98117 -0.993387 C 1.67173 -0.364514 1.67301 0.372642 1.98465 1.00043 " style="stroke:none"/>
+		</g>
+		<marker id="mrkr5-38" class="st12" v:arrowType="5" v:arrowSize="2" v:setback="3.22" refX="-3.22" orient="auto"
+				markerUnits="strokeWidth" overflow="visible">
+			<use xlink:href="#lend5" transform="scale(-1.84,-1.84) "/>
+		</marker>
+	</defs>
+	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+		<v:userDefs>
+			<v:ud v:nameU="msvThemeColors" v:val="VT0(36):26"/>
+			<v:ud v:nameU="msvThemeEffects" v:val="VT0(16):26"/>
+			<v:ud v:nameU="msvThemeOrder" v:val="VT0(0):26"/>
+		</v:userDefs>
+		<title>Zeichenblatt-1</title>
+		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
+				v:shadowOffsetY="-8.50394"/>
+		<v:layer v:name="Verbinder" v:index="0"/>
+		<g id="shape6-1" v:mID="6" v:groupContext="shape" transform="translate(18,-178.326)">
+			<title>Rechteck.6</title>
+			<desc>Agilo Boards</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(14):26"/>
+				<v:ud v:nameU="msvThemeColors" v:val="VT0(36):26"/>
+				<v:ud v:nameU="msvThemeEffects" v:val="VT0(16):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
+			<v:textRect cx="78.6614" cy="255.322" width="157.33" height="117.992"/>
+			<g id="shadow6-2" v:groupContext="shadow" v:shadowOffsetX="1.44" v:shadowOffsetY="-1.44" v:shadowType="1"
+					transform="matrix(1,0,0,1,1.44,1.44)" class="st1">
+				<rect x="0" y="196.326" width="157.323" height="117.992" class="st2"/>
+			</g>
+			<rect x="0" y="196.326" width="157.323" height="117.992" class="st3"/>
+			<text x="43.12" y="212.93" class="st4" v:langID="2055"><v:paragraph v:horizAlign="1"/><v:tabList/>Agilo Boards</text>		</g>
+		<g id="shape7-8" v:mID="7" v:groupContext="shape" transform="translate(18,-19.94)">
+			<title>Rechteck.7</title>
+			<desc>Mock Backend in NodeJS</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(14):26"/>
+				<v:ud v:nameU="msvThemeColors" v:val="VT0(36):26"/>
+				<v:ud v:nameU="msvThemeEffects" v:val="VT0(16):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="78.6614" cy="284.288" width="157.33" height="60.0591"/>
+			<g id="shadow7-9" v:groupContext="shadow" v:shadowOffsetX="1.44" v:shadowOffsetY="-1.44" v:shadowType="1"
+					transform="matrix(1,0,0,1,1.44,1.44)" class="st1">
+				<rect x="0" y="254.259" width="157.323" height="60.0591" class="st2"/>
+			</g>
+			<rect x="0" y="254.259" width="157.323" height="60.0591" class="st5"/>
+			<text x="37.12" y="280.09" class="st4" v:langID="2055"><v:paragraph v:horizAlign="1"/><v:tabList/>Mock Backend<v:newlineChar/><tspan
+						x="58.89" dy="1.68em" class="st6">in NodeJS</tspan></text>		</g>
+		<g id="shape8-16" v:mID="8" v:groupContext="shape" transform="translate(27.6378,-197.991)">
+			<title>Rechteck.8</title>
+			<desc>Scrum- board</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(14):26"/>
+				<v:ud v:nameU="msvThemeColors" v:val="VT0(36):26"/>
+				<v:ud v:nameU="msvThemeEffects" v:val="VT0(16):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="31.4646" cy="278.013" width="62.93" height="72.6105"/>
+			<g id="shadow8-17" v:groupContext="shadow" v:shadowOffsetX="1.44" v:shadowOffsetY="-1.44" v:shadowType="1"
+					transform="matrix(1,0,0,1,1.44,1.44)" class="st1">
+				<rect x="0" y="241.707" width="62.9291" height="72.6105" class="st2"/>
+			</g>
+			<rect x="0" y="241.707" width="62.9291" height="72.6105" class="st7"/>
+			<text x="14.3" y="274.41" class="st8" v:langID="2055"><v:paragraph v:horizAlign="1"/><v:tabList/>Scrum-<v:newlineChar/><tspan
+						x="17.03" dy="1.2em" class="st9">board</tspan></text>		</g>
+		<g id="shape9-24" v:mID="9" v:groupContext="shape" transform="translate(103.039,-197.991)">
+			<title>Rechteck.9</title>
+			<desc>Backlog board</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(14):26"/>
+				<v:ud v:nameU="msvThemeColors" v:val="VT0(36):26"/>
+				<v:ud v:nameU="msvThemeEffects" v:val="VT0(16):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="31.4646" cy="278.013" width="62.93" height="72.6105"/>
+			<g id="shadow9-25" v:groupContext="shadow" v:shadowOffsetX="1.44" v:shadowOffsetY="-1.44" v:shadowType="1"
+					transform="matrix(1,0,0,1,1.44,1.44)" class="st1">
+				<rect x="0" y="241.707" width="62.9291" height="72.6105" class="st2"/>
+			</g>
+			<rect x="0" y="241.707" width="62.9291" height="72.6105" class="st10"/>
+			<text x="12.7" y="274.41" class="st8" v:langID="2055"><v:paragraph v:horizAlign="1"/><v:tabList/>Backlog<v:newlineChar/><tspan
+						x="17.03" dy="1.2em" class="st9">board</tspan></text>		</g>
+		<g id="shape10-32" v:mID="10" v:groupContext="shape" v:layerMember="0" transform="translate(89.5748,-178.326)">
+			<title>Dynamischer Verbinder.10</title>
+			<v:userDefs>
+				<v:ud v:nameU="msvThemeColors" v:val="VT0(36):26"/>
+				<v:ud v:nameU="msvThemeEffects" v:val="VT0(16):26"/>
+			</v:userDefs>
+			<path d="M7.09 314.32 L7.09 402.98" class="st11"/>
+		</g>
+		<g id="shape1-39" v:mID="1" v:groupContext="shape" transform="translate(-191.339,-185.173)">
+			<title>Rechteck</title>
+			<desc>Agilo Boards</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(14):26"/>
+				<v:ud v:nameU="msvThemeColors" v:val="VT0(36):26"/>
+				<v:ud v:nameU="msvThemeEffects" v:val="VT0(16):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197" v:verticalAlign="0"/>
+			<v:textRect cx="78.6614" cy="255.322" width="157.33" height="117.992"/>
+			<g id="shadow1-40" v:groupContext="shadow" v:shadowOffsetX="1.44" v:shadowOffsetY="-1.44" v:shadowType="1"
+					transform="matrix(1,0,0,1,1.44,1.44)" class="st1">
+				<rect x="0" y="196.326" width="157.323" height="117.992" class="st2"/>
+			</g>
+			<rect x="0" y="196.326" width="157.323" height="117.992" class="st3"/>
+			<text x="43.12" y="212.93" class="st4" v:langID="2055"><v:paragraph v:horizAlign="1"/><v:tabList/>Agilo Boards</text>		</g>
+		<g id="shape2-45" v:mID="2" v:groupContext="shape" transform="translate(-191.339,-26.7874)">
+			<title>Rechteck.1</title>
+			<desc>Agilo</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(14):26"/>
+				<v:ud v:nameU="msvThemeColors" v:val="VT0(36):26"/>
+				<v:ud v:nameU="msvThemeEffects" v:val="VT0(16):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="78.6614" cy="284.288" width="157.33" height="60.0591"/>
+			<g id="shadow2-46" v:groupContext="shadow" v:shadowOffsetX="1.44" v:shadowOffsetY="-1.44" v:shadowType="1"
+					transform="matrix(1,0,0,1,1.44,1.44)" class="st1">
+				<rect x="0" y="254.259" width="157.323" height="60.0591" class="st2"/>
+			</g>
+			<rect x="0" y="254.259" width="157.323" height="60.0591" class="st3"/>
+			<text x="64.41" y="288.49" class="st4" v:langID="2055"><v:paragraph v:horizAlign="1"/><v:tabList/>Agilo</text>		</g>
+		<g id="shape3-51" v:mID="3" v:groupContext="shape" transform="translate(-181.701,-204.839)">
+			<title>Rechteck.3</title>
+			<desc>Scrum- board</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(14):26"/>
+				<v:ud v:nameU="msvThemeColors" v:val="VT0(36):26"/>
+				<v:ud v:nameU="msvThemeEffects" v:val="VT0(16):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="31.4646" cy="278.013" width="62.93" height="72.6105"/>
+			<g id="shadow3-52" v:groupContext="shadow" v:shadowOffsetX="1.44" v:shadowOffsetY="-1.44" v:shadowType="1"
+					transform="matrix(1,0,0,1,1.44,1.44)" class="st1">
+				<rect x="0" y="241.707" width="62.9291" height="72.6105" class="st2"/>
+			</g>
+			<rect x="0" y="241.707" width="62.9291" height="72.6105" class="st7"/>
+			<text x="14.3" y="274.41" class="st8" v:langID="2055"><v:paragraph v:horizAlign="1"/><v:tabList/>Scrum-<v:newlineChar/><tspan
+						x="17.03" dy="1.2em" class="st9">board</tspan></text>		</g>
+		<g id="shape4-58" v:mID="4" v:groupContext="shape" transform="translate(-106.299,-204.839)">
+			<title>Rechteck.4</title>
+			<desc>Backlog board</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(14):26"/>
+				<v:ud v:nameU="msvThemeColors" v:val="VT0(36):26"/>
+				<v:ud v:nameU="msvThemeEffects" v:val="VT0(16):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="31.4646" cy="278.013" width="62.93" height="72.6105"/>
+			<g id="shadow4-59" v:groupContext="shadow" v:shadowOffsetX="1.44" v:shadowOffsetY="-1.44" v:shadowType="1"
+					transform="matrix(1,0,0,1,1.44,1.44)" class="st1">
+				<rect x="0" y="241.707" width="62.9291" height="72.6105" class="st2"/>
+			</g>
+			<rect x="0" y="241.707" width="62.9291" height="72.6105" class="st10"/>
+			<text x="12.7" y="274.41" class="st8" v:langID="2055"><v:paragraph v:horizAlign="1"/><v:tabList/>Backlog<v:newlineChar/><tspan
+						x="17.03" dy="1.2em" class="st9">board</tspan></text>		</g>
+		<g id="shape5-65" v:mID="5" v:groupContext="shape" v:layerMember="0" transform="translate(-119.764,-185.173)">
+			<title>Dynamischer Verbinder</title>
+			<v:userDefs>
+				<v:ud v:nameU="msvThemeColors" v:val="VT0(36):26"/>
+				<v:ud v:nameU="msvThemeEffects" v:val="VT0(16):26"/>
+			</v:userDefs>
+			<path d="M7.09 314.32 L7.09 402.98" class="st11"/>
+		</g>
+	</g>
+</svg>

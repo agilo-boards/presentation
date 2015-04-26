@@ -140,121 +140,128 @@
                     </div>
                 </div>
             </section>
-            <section>
-                <h2>Print your presentation</h2>
-                <p>This is easy: use the suffix
-                    <a href="?print-pdf">?print-pdf</a>&nbsp;in the address bar to enter print mode</p>
+            <section data-title="Architektur" class='left'>
+                <h2>Komponenten und Services</h2>
+                
+                <div>
+                    <div style="display: inline-block; width: 49%; text-align:center">
+                        <object data="../../images/presentation/components-real.svg" type="image/svg+xml" style="height: 400px">
+                        </object>
+                        <br/>
+                        <p data-fragment-index="1" class="fragment">Real</p>
+                    </div>
+                    <div style="display: inline-block; width: 49%; text-align:center" class="fragment" data-fragment-index="1">
+                        <object data="../../images/presentation/components-mock.svg" type="image/svg+xml" style="height: 400px">
+                        </object><br/>
+                        <p>Mocked</p>
+                    </div>
+                </div>
+            </section>
+            
+            
+            <section data-state='orange'>
+                <div class="zuehlke-center">
+                    <div class="zuehlke-splash-title">
+                        <a href="http://127.0.0.1:8091/#/scrumboard" target="_blank" style="color: white">
+                            Demo
+                        </a>
+                    </div>
+                    <div class="zuehlke-splash-subtitle"></div>
+                </div>
             </section>
 
-            <section data-title="Simple Page with speaker notes">
-                <h2>Speaker notes</h2>
-                <p>
-                    Press 's' on the keyboard
+            <section data-state='orange'>
+                <div class="zuehlke-center">
+                    <div class="zuehlke-splash-title">Drag &amp; Drop</div>
+                    <div class="zuehlke-splash-subtitle"></div>
+                </div>
+            </section>
+            
+            <section data-title="Drag & Drop" class='left'>
+                <h2>Directives</h2>
+                <ul>
+                    <li><code>draggable</code> element to drag</li>
+                    <li><code>dropable</code> area(s) to drop the element into</li>
+                </ul>
+                <p style="margin-top: 50px"/>
+                <div  data-fragment-index="1" class="fragment">
+                    <h2>Advanced Features</h2>
+                    <ul>
+                        <li>Placeholder where the element is placed if dropped</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section data-title="Drag & Drop" class='left'>
+                <h2>draggable</h2>
+                
+                Link Function:
+                <pre><code>
+angular.element(element).attr('draggable', 'true');
+
+element.bind('dragstart', function () {
+    var storyId = angular.element(element).attr('story-id');
+    localStorage.setItem('draggedStoryId', storyId);
+    $rootScope.$emit('storyDraggingStart');
+});
+
+element.bind('dragend', function () {
+    $rootScope.$emit('storyDraggingEnd');
+});
+                </code></pre>
+            </section>
+            
+            <section data-title="Drag & Drop" class='left'>
+                <h2>dropable</h2>
+                
+                Link Function:
+                <pre><code>
+var id = attrs.id; // generate id, if no id exists
+
+element.bind('drop', function (e) {
+    e.stopPropagation(); e.preventDefault();
+    
+    var src = getStory(storyId);
+    var dest = document.getElementById(id);
+    var storyId = localStorage.getItem('draggedStoryId');
+    
+    $rootScope.$broadcast('story-dragged', src, dest, storyId);
+});
+                </code></pre>
+                
+                <p data-fragment-index="1" class="fragment" style="margin-top: 50px">
+                    Mit Placeholder sieht es etwas komplizierter aus. <a href="http://127.0.0.1:8091/scripts/directives/draggableStory.js" target="_blank"><code>draggableStory.js</code></a>
                 </p>
-                <aside class="notes">
-                    Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-                </aside>
             </section>
-
-            <section data-title="Image with shadow">
-                <p>Image with nice shadow effect:</p>
-                <p>
-                    <img src="images/presentation/wtf.gif" class="shadow" />
-                </p>
-                <pre>
-                    <code data-trim contenteditable>
-                        <img src="images/presentation/wtf.gif" class="shadow" />
-                    </code>
-                </pre>
+            
+            <section data-title="Drag & Drop" class='left'>
+                <h2>Notes</h2>
+                <ul>
+                    <li style="padding: 20px" data-fragment-index="1" class="fragment"><code>localStorage</code> statt Speichern auf dem Event selbst</li>
+                    <li style="padding: 20px" data-fragment-index="2" class="fragment">Noch nicht ausgereift</li>
+                </ul>
             </section>
-
-            <section data-title="Example of pie chart" data-state="chart">
-                <h2>Destkop vs. Phone vs. Tablet</h2>
-                <canvas height="400px" width="900px" id="desktopMobileDistributionChart"></canvas>
-                <p>
-                    see presentation.js for code and help yourself with
-                    <a href="http://www.chartjs.org/" target="_blank">chartjs
-                    </a>
-
-                </p>
-            </section>
-
-            <section data-title="Example of bar cahrt" data-state="chart">
-                <h2>Mobile Devices</h2>
-                <canvas class="left" height="400px" width="750px" id="mobileDeviceChart"></canvas>
-
-                <div class="left" style="text-align: left;">
-                    <p style="padding:0;">Apple 71%</p>
-                    <p style="padding:0;">Samsung 18%</p>
-                    <p style="padding:0;">HTC 2%</p>
-                    <p style="padding:0;">Sony 1.5%</p>
-                    <p style="padding:0;">Nokia 0.8%</p>
+            
+            <section data-state='orange'>
+                <div class="zuehlke-center">
+                    <div class="zuehlke-splash-title">Zukunftsvision</div>
+                    <div class="zuehlke-splash-subtitle"></div>
                 </div>
             </section>
-
-            <!-- Example of nested vertical slides -->
-            <section>
-                <section>
-                    <h2>Vertical Slides</h2>
-                    <p>
-                        Slides can be nested inside of other slides, try pressing
-                        <a href="#" class="navigate-down">down</a>.
-                    </p>
-                    <a href="#" class="image navigate-down">
-                        <img width="178" height="238" src="images/arrow.png" alt="Down arrow">
-                    </a>
-                </section>
-                <section>
-                    <h2>Basement Level 1</h2>
-                    <p>Press down or up to navigate.</p>
-                </section>
-                <section>
-                    <h2>Basement Level 2</h2>
-                    <p>That's it, time to go back up.</p>
-                    <a href="#/2" class="image">
-                        <img width="178" height="238" src="images/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-                    </a>
-                </section>
+            
+            <section data-title="Zukunftsvision" class='left'>
+                <h2>Zukunftsvision</h2>
+                <ul>
+                    <li style="padding: 20px" data-fragment-index="1" class="fragment">Agilo-Boards erweitern für JIRA</li>
+                    <li style="padding: 20px" data-fragment-index="2" class="fragment">Drag &amp; Drop verbessern</li>
+                    <li style="padding: 20px" data-fragment-index="3" class="fragment">Weitere Features</li>
+                </ul>
             </section>
-            <section>
-                <h2>Point of View</h2>
-                <p>
-                    Press
-                    <strong>ESC</strong>to enter the slide overview.
-                </p>
-                <p>
-                    Hold down alt and click on any element to zoom in on it using
-                    <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-                </p>
-            </section>
-            <section data-transition="linear" data-state="zuehlke-bg-parallax" data-parallax-step=0>
+            
+            <section data-state='orange'>
                 <div class="zuehlke-center">
-                    <div class="zuehlke-splash-title">Splash with full bg image</div>
-                </div>
-            </section>
-            <section data-transition="linear" data-state="zuehlke-bg-parallax" data-parallax-step=1>
-                <div class="zuehlke-center">
-                    <div class="zuehlke-splash-title">Splash with full bg image</div>
-                </div>
-            </section>
-            <section data-transition="linear" data-state="zuehlke-bg-parallax" data-parallax-step=2>
-                <div class="zuehlke-center">
-                    <div class="zuehlke-splash-title">Splash with full bg image</div>
-                </div>
-            </section>
-            <section data-transition="linear" data-state="zuehlke-bg-parallax" data-parallax-step=3>
-                <div class="zuehlke-center">
-                    <div class="zuehlke-splash-title">Splash with full bg image</div>
-                </div>
-            </section>
-            <section data-transition="linear" data-state="zuehlke-bg-parallax" data-parallax-step=4>
-                <div class="zuehlke-center">
-                    <div class="zuehlke-splash-title">Splash with full bg image</div>
-                </div>
-            </section>
-            <section data-transition="linear" data-state="zuehlke-bg-parallax" data-parallax-step=5>
-                <div class="zuehlke-center">
-                    <div class="zuehlke-splash-title">THE END</div>
+                    <div class="zuehlke-splash-title">Any Questions?</div>
+                    <div class="zuehlke-splash-subtitle"></div>
                 </div>
             </section>
         </div>

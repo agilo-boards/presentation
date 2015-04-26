@@ -21,6 +21,8 @@ body.print-pdf section.zuehlke-bg-parallax{
 
 html.agiloboards-bg-parallax body {
     background-image: url("../images/presentation/scrum-board.png");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 div.zuehlke-splash-title.orange {
     color: white;
