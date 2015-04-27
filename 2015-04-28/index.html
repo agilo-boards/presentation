@@ -78,8 +78,8 @@
                 </div>
             </section>
 
-            <section data-title="How it all started ...">
-                <h2>Ausgangslage</h2>
+            <section data-title="How it all started ..." class='left'>
+                <h2>Initial situation</h2>
                 
                 TODO: Bild vom Scrumboard?
                 <p>
@@ -87,8 +87,20 @@
                 </p>
             </section>
 
-            <section data-title="How it all started ...">
-                <h2>Mit Agilo Boards</h2>
+            <section data-title="How it all started ..." class='left'>
+                <h2>Goals</h2>
+                
+				A tool for a distributed Scrum team:
+                <ol style="padding-left: 50px; font-size: 32px; padding-top: 30px">
+					<li data-fragment-index="1" class="fragment" style="padding: 20px">Digitalized scrumboard</li>
+					<li data-fragment-index="2" class="fragment" style="padding: 20px">Digital grooming session</li>
+					<li data-fragment-index="3" class="fragment" style="padding: 20px">Custom features (e.g. "on hold" post-its)</li>
+					<li data-fragment-index="4" class="fragment" style="padding: 20px">Good to use and read on beamer as well as on own PC <p>&#8594; Responsive</p></li>
+				</ol>
+            </section>
+
+            <section data-title="How it all started ..." class='left'>
+                <h2>With Agilo Boards</h2>
                 
                 <div>
                     <div style="display: inline-block; width: 49%">
@@ -106,13 +118,13 @@
 
             <section data-state='orange'>
                 <div class="zuehlke-center">
-                    <div class="zuehlke-splash-title">Architektur</div>
-                    <div class="zuehlke-splash-subtitle">Yeoman, AngularJS und Protractor</div>
+                    <div class="zuehlke-splash-title">Architecture</div>
+                    <div class="zuehlke-splash-subtitle">Yeoman, AngularJS and Protractor</div>
                 </div>
             </section>
 
             <section data-title="Architektur" class='left'>
-                <h2>Tools und Frameworks</h2>
+                <h2>Tools and Frameworks</h2>
                 <div class="tools">
                     <!--<div class="tool">
                         <img src="../../images/presentation/tools-yo.png"/><br/>
@@ -141,7 +153,7 @@
                 </div>
             </section>
             <section data-title="Architektur" class='left'>
-                <h2>Komponenten und Services</h2>
+                <h2>Components and Services</h2>
                 
                 <div>
                     <div style="display: inline-block; width: 49%; text-align:center">
@@ -173,21 +185,100 @@
             <section data-state='orange'>
                 <div class="zuehlke-center">
                     <div class="zuehlke-splash-title">Drag &amp; Drop</div>
-                    <div class="zuehlke-splash-subtitle"></div>
+                    <div class="zuehlke-splash-subtitle">From a simple HTML5 example to a not-so-perfect solution with placeholder </div>
                 </div>
             </section>
             
             <section data-title="Drag & Drop" class='left'>
+                <h2>Drag &amp; Drop in HTML5</h2>
+				Events<br/>
+				<ul style="font-size: 26px; padding-left: 50px">
+					<li><code>dragstart</code> - dragging starts, fired on dragged element</li>
+					<li><code>dragenter</code> - mouse enters an element <small>1)</small> <small>2)</small></li>
+					<li><code>dragover</code> - mouse moves over an element <small>1)</small></li>
+					<li><code>dragleave</code> - mouse leaves an element <small>2)</small></li>
+					<li><code>drag</code> - similar to dragstart</li>
+					<li><code>drop</code> - drop successful</li>
+					<li><code>dragend</code> - fired on dragged element whether successful or not</li>
+				</ul>
+				<p style="font-size: 26px; padding-left: 26px; padding-bottom:20px">
+					<small>1)</small> Indicate whether drop is allowed<br/>
+					<small>2)</small> Highlight drop area
+				</p>
+				<dl>What can be dragged &amp; dropped?</dl> <dd style="font-size: 26px; padding-left: 50px">Files, images, HTML document nodes, ...</dd>
+				<br/>
+				<a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Drag_and_drop">Drag and drop - Web developer guide | MDN</a>
+            </section>
+            
+            <section data-title="Drag & Drop" class='left'>
+                <h2>Drag &amp; Drop in HTML5</h2>
+                
+                <pre style="width: 100%"><code>
+&lt;img id.. draggable="true" ondragstart="drag(event)" />
+
+&lt;div id.. ondrop="drop(event)" ondragover="allowDrop(event)">&lt;/div>
+                </code></pre>
+                <pre style="width: 100%"><code>
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function allowDrop(ev) {
+    ev.preventDefault(); 
+    ev.dataTransfer.dropEffect = 'move';
+    // ev.dataTransfer.getData('text') can't be used here
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData('text');
+    ev.target.appendChild(document.getElementById(data));
+}
+                </code></pre>
+            </section>
+			
+			<section data-title="Drag & Drop" class='left'>
+				<script>
+					function allowDrop(ev) {
+						ev.preventDefault();
+					}
+
+					function drag(ev) {
+						ev.dataTransfer.setData("text", ev.target.id);
+					}
+
+					function drop(ev) {
+						ev.preventDefault();
+						var data = ev.dataTransfer.getData("text");
+						ev.target.appendChild(document.getElementById(data));
+					}
+				</script>
+
+				<p>Drag images into the rectangle:</p>
+
+				<div id="dropable-area1" class="dropable" ondrop="drop(event)" ondragover="allowDrop(event)">
+					<div style="width: 200px; height: 200px; background-color: rgba(255, 0, 0, 0.2); display: inline-block"></div>
+				</div>
+				<br>
+				
+				<div id="dropable-area2" class="dropable" ondrop="drop(event)" ondragover="allowDrop(event)">
+					<div id="draggable-zuehlke-wuerfel" class="zuehlke-zuerfel" draggable="true" ondragstart="drag(event)"></div>
+					<div id="draggable-angularjs" class="draggable" draggable="true" ondragstart="drag(event)"></div>
+				</div>
+
+			</section>
+            
+            <section data-title="Drag & Drop" class='left'>
                 <h2>Directives</h2>
                 <ul>
-                    <li><code>draggable</code> element to drag</li>
-                    <li><code>dropable</code> area(s) to drop the element into</li>
+                    <li><code>draggable</code> - element to drag</li>
+                    <li><code>dropable</code> - area(s) to drop the element into</li>
                 </ul>
                 <p style="margin-top: 50px"/>
                 <div  data-fragment-index="1" class="fragment">
                     <h2>Advanced Features</h2>
                     <ul>
-                        <li>Placeholder where the element is placed if dropped</li>
+                        <li>A placeholder where the element is placed if dropped</li>
                     </ul>
                 </div>
             </section>
@@ -230,16 +321,21 @@ element.bind('drop', function (e) {
                 </code></pre>
                 
                 <p data-fragment-index="1" class="fragment" style="margin-top: 50px">
-                    Mit Placeholder sieht es etwas komplizierter aus. <a href="http://127.0.0.1:8091/scripts/directives/draggableStory.js" target="_blank"><code>draggableStory.js</code></a>
+                    The solution with a placeholder looks slightly more complicated: <a href="http://127.0.0.1:8091/scripts/directives/draggableStory.js" target="_blank"><code>draggableStory.js</code></a>
                 </p>
             </section>
             
             <section data-title="Drag & Drop" class='left'>
-                <h2>Notes</h2>
+                <h2>Compromises &amp; Lessons Learned</h2>
                 <ul>
-                    <li style="padding: 20px" data-fragment-index="1" class="fragment"><code>localStorage</code> statt Speichern auf dem Event selbst</li>
-                    <li style="padding: 20px" data-fragment-index="2" class="fragment">Noch nicht ausgereift</li>
+                    <li style="padding: 10px" data-fragment-index="1" class="fragment">HTML5 Storage <small>You might want to use <code>localStorage</code> instead of the data transfer of the event, because it just works</small></li>
+					<li style="padding: 10px" data-fragment-index="2" class="fragment">Where did I drop it?<small>Search for the first "dropable" parent of <code>ev.target</code> with <code>$(e.target).closest('[dropable]')</code></small></li>
+						
+					<li style="padding: 10px" data-fragment-index="3" class="fragment">Look&amp;Feel<small>Add a placeholder to improve the look&amp;feel (and to make your life more complicated)</small></li>
+					<li style="padding: 10px" data-fragment-index="4" class="fragment">Custom Events<small>Use custom events with parameters: <code>$rootScope.$broadcast(..)</code></small></li>
+                    
                 </ul>
+				<p style="padding: 30px" data-fragment-index="5" class="fragment">Checkout <a href="https://github.com/agilo-boards/agilo-boards/blob/master/client/app/scripts/directives/draggableStory.js" target="_blank">our solution</a>. It isn't perfect and might have some unnecassary workarounds, but it's a start.</p>
             </section>
 			
 			<section data-state='orange'>
@@ -337,14 +433,18 @@ exports.config = {
                 <h2>Zukunftsvision</h2>
                 <ul>
                     <li style="padding: 20px" data-fragment-index="1" class="fragment">Agilo-Boards erweitern für JIRA</li>
-                    <li style="padding: 20px" data-fragment-index="2" class="fragment">Drag &amp; Drop verbessern</li>
+                    <li style="padding: 20px" data-fragment-index="2" class="fragment">Improve drag &amp; drop (study specification and improve placeholder)</li>
                     <li style="padding: 20px" data-fragment-index="3" class="fragment">Weitere Features</li>
                 </ul>
             </section>
             
             <section data-state='orange'>
                 <div class="zuehlke-center">
-                    <div class="zuehlke-splash-title">Any Questions?</div>
+                    <div class="zuehlke-splash-title">
+						Any Questions?
+						<p></p>
+						<small><a style="color: white" target="_blank" href="http://github.com/agilo-boards">github.com/agilo-boards</a></small>
+					</div>
                     <div class="zuehlke-splash-subtitle"></div>
                 </div>
             </section>

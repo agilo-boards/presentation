@@ -57,3 +57,28 @@ div.tool img {
     width: 150px;
     height: 150px;
 }
+
+div.dropable {
+	margin: 15px auto;
+	width: 90%;
+	height: 200px;
+	border: 7px solid grey;
+	border-radius: 20px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+div.draggable {
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+}
+
+div.draggable#draggable-angularjs {
+    background-image: url("../../images/presentation/tools-angularjs.jpg");
+}
+
+div.draggable#draggable-jsp {
+    background-image: url("../../images/presentation/no-tools-jsp.jpg");
+}
