@@ -82,3 +82,17 @@ div.draggable#draggable-angularjs {
 div.draggable#draggable-jsp {
     background-image: url("../../images/presentation/no-tools-jsp.jpg");
 }
+
+div#constributors {
+    text-align: center;
+}
+
+div#constributors div {
+    display: inline-block;
+    padding: 20px 50px;
+}
+
+div#constributors div img {
+    max-width: 150px;
+    height: 150px;
+}
