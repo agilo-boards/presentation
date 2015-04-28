@@ -208,6 +208,92 @@
                     <div class="zuehlke-splash-subtitle">with mocked Agilo services</div>
                 </div>
             </section>
+			
+			<section data-state='orange'>
+                <div class="zuehlke-center">
+                    <div class="zuehlke-splash-title">Protractor</div>
+                    <div class="zuehlke-splash-subtitle">UI Testing with Selenium</div>
+                </div>
+            </section>
+            
+            <section data-title="Protractor" class='left'>
+                <h2>Protractor</h2>
+                <ul>
+                    <li>e2e test framework</li>
+                    <li>built on top of WebdriverJS</li>
+                    <li>for angularjs apps</li>
+                </ul>
+                <p style="margin-top: 50px"/>
+                <div class="fragment">
+                    <h2>Grunt plugin</h2>
+                    <ul>
+                        <li>grunt-protractor-runner</li>
+                    </ul>
+                </div>
+            </section>
+			
+			<section data-title="Protractor" class='left'>
+                <h2>Example of a test</h2>
+                <pre><code>
+// spec.js
+describe('Protractor Demo App', function() {
+  it('should add one and two', function() {
+    browser.get('http://juliemr.github.io/protractor-demo/');
+    element(by.model('first')).sendKeys(1);
+    element(by.model('second')).sendKeys(2);
+
+    element(by.id('gobutton')).click();
+
+    expect(element(by.binding('latest')).getText()).
+        toEqual('5'); // This is wrong!
+  });
+});
+                </code></pre>
+                
+         
+            </section>
+            
+            <section data-title="Protractor" class='left'>
+                <h2>configuration file</h2>
+                
+                <pre><code>
+//conf.js
+exports.config = {
+    seleniumServerJar: './node_modules/protractor/selenium/selenium-server-standalone-2.42.2.jar',
+    seleniumPort: null,
+    chromeDriver: './node_modules/protractor/selenium/chromedriver',
+    seleniumArgs: [],
+
+    capabilities: {
+        'browserName': 'chrome'
+    },
+    specs: ['test/spec/end2End/*.js'],
+  
+    jasmineNodeOpts: {
+        showColors: true
+    }
+};
+                </code></pre>
+            </section>
+            
+			<section data-title="Protractor" class='left'>
+                <h2>global variables</h2>
+                <ul>
+                    <li>browser - browser.get(url)</li>
+                    <li>element - element.click()</li>
+					<li>by - creates locators</li>
+                </ul>
+				<p style="margin-top: 50px"/>
+                <div class="fragment">
+				<h2>best practises</h2>
+					<ul>
+						<li>use AngularJS attributes: by.model, by.repeater, ...</li>
+						<li>create page objects</li>
+					</ul>
+				</div>
+            </section>
+			
+			
 
             <section data-state='orange'>
                 <div class="zuehlke-center">
@@ -363,90 +449,6 @@ element.bind('drop', function (e) {
                     
                 </ul>
 				<p style="padding: 30px" data-fragment-index="5" class="fragment">Checkout <a href="https://github.com/agilo-boards/agilo-boards/blob/master/client/app/scripts/directives/draggableStory.js" target="_blank">our solution</a>. It isn't perfect and might have some unnecassary workarounds, but it's a start.</p>
-            </section>
-			
-			<section data-state='orange'>
-                <div class="zuehlke-center">
-                    <div class="zuehlke-splash-title">Protractor</div>
-                    <div class="zuehlke-splash-subtitle">UI Testing with Selenium</div>
-                </div>
-            </section>
-            
-            <section data-title="Protractor" class='left'>
-                <h2>Protractor</h2>
-                <ul>
-                    <li>e2e test framework</li>
-                    <li>built on top of WebdriverJS</li>
-                    <li>for angularjs apps</li>
-                </ul>
-                <p style="margin-top: 50px"/>
-                <div class="fragment">
-                    <h2>Grunt plugin</h2>
-                    <ul>
-                        <li>grunt-protractor-runner</li>
-                    </ul>
-                </div>
-            </section>
-			
-			<section data-title="Protractor" class='left'>
-                <h2>Example of a test</h2>
-                <pre><code>
-// spec.js
-describe('Protractor Demo App', function() {
-  it('should add one and two', function() {
-    browser.get('http://juliemr.github.io/protractor-demo/');
-    element(by.model('first')).sendKeys(1);
-    element(by.model('second')).sendKeys(2);
-
-    element(by.id('gobutton')).click();
-
-    expect(element(by.binding('latest')).getText()).
-        toEqual('5'); // This is wrong!
-  });
-});
-                </code></pre>
-                
-         
-            </section>
-            
-            <section data-title="Protractor" class='left'>
-                <h2>configuration file</h2>
-                
-                <pre><code>
-//conf.js
-exports.config = {
-    seleniumServerJar: './node_modules/protractor/selenium/selenium-server-standalone-2.42.2.jar',
-    seleniumPort: null,
-    chromeDriver: './node_modules/protractor/selenium/chromedriver',
-    seleniumArgs: [],
-
-    capabilities: {
-        'browserName': 'chrome'
-    },
-    specs: ['test/spec/end2End/*.js'],
-  
-    jasmineNodeOpts: {
-        showColors: true
-    }
-};
-                </code></pre>
-            </section>
-            
-			<section data-title="Protractor" class='left'>
-                <h2>global variables</h2>
-                <ul>
-                    <li>browser - browser.get(url)</li>
-                    <li>element - element.click()</li>
-					<li>by - creates locators</li>
-                </ul>
-				<p style="margin-top: 50px"/>
-                <div class="fragment">
-				<h2>best practises</h2>
-					<ul>
-						<li>use AngularJS attributes: by.model, by.repeater, ...</li>
-						<li>create page objects</li>
-					</ul>
-				</div>
             </section>
             
             <section data-state='orange'>
